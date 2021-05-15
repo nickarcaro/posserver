@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "almacenes",
+  "info": {
+    "name": "Almacenes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "activo",
+        "inactivo"
+      ],
+      "default": "activo"
+    },
+    "user": {
+      "via": "almacenes",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "productos": {
+      "via": "almacen",
+      "collection": "productos"
+    }
+  }
+}

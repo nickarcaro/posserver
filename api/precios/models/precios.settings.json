@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "precios",
+  "info": {
+    "name": "Precios"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "inicio_vigencia": {
+      "type": "date"
+    },
+    "fecha_termino": {
+      "type": "date"
+    },
+    "valor_neto": {
+      "type": "integer"
+    },
+    "valor_bruto": {
+      "type": "integer"
+    },
+    "iva": {
+      "type": "decimal"
+    },
+    "producto": {
+      "via": "precio",
+      "model": "productos"
+    }
+  }
+}

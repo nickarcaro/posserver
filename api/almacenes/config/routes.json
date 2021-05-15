@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/almacenes",
+      "handler": "almacenes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/almacenes/count",
+      "handler": "almacenes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/almacenes/:id",
+      "handler": "almacenes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/almacenes",
+      "handler": "almacenes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/almacenes/:id",
+      "handler": "almacenes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/almacenes/:id",
+      "handler": "almacenes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
