@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alertas",
+  "info": {
+    "name": "Alerta"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fecha": {
+      "type": "date"
+    },
+    "mensaje": {
+      "type": "richtext"
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "activo",
+        "inactivo"
+      ],
+      "default": "inactivo"
+    },
+    "producto": {
+      "model": "productos",
+      "via": "alertas"
+    }
+  }
+}

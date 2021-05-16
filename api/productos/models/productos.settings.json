@@ -44,6 +44,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "alertas": {
+      "via": "producto",
+      "collection": "alerta"
     }
   }
 }

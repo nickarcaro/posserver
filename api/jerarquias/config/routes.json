@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/jerarquias",
+      "handler": "jerarquias.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jerarquias/count",
+      "handler": "jerarquias.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jerarquias/:id",
+      "handler": "jerarquias.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jerarquias",
+      "handler": "jerarquias.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/jerarquias/:id",
+      "handler": "jerarquias.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/jerarquias/:id",
+      "handler": "jerarquias.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

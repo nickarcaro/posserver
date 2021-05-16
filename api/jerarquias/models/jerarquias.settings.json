@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jerarquias",
+  "info": {
+    "name": "Jerarquias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}
