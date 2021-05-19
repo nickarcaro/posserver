@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "productos",
   "info": {
-    "name": "Productos",
+    "name": "Producto",
     "description": ""
   },
   "options": {
@@ -28,8 +28,8 @@
       "targetField": "nombre"
     },
     "almacen": {
-      "model": "almacenes",
-      "via": "productos"
+      "via": "productos",
+      "model": "almacenes"
     },
     "precio": {
       "via": "producto",

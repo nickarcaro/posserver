@@ -26,8 +26,8 @@
       "default": "inactivo"
     },
     "producto": {
-      "model": "productos",
-      "via": "alertas"
+      "via": "alertas",
+      "model": "productos"
     }
   }
 }

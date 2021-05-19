@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "precios",
   "info": {
-    "name": "Precios"
+    "name": "Precio",
+    "description": ""
   },
   "options": {
     "increments": true,

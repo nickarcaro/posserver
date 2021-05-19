@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "almacenes",
   "info": {
-    "name": "Almacenes",
+    "name": "Almacen",
     "description": ""
   },
   "options": {
