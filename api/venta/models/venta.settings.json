@@ -36,6 +36,10 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "detalle_ventas": {
+      "via": "venta",
+      "collection": "detalle-venta"
     }
   }
 }

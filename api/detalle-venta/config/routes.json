@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/detalle-ventas",
+      "handler": "detalle-venta.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/detalle-ventas/count",
+      "handler": "detalle-venta.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/detalle-ventas/:id",
+      "handler": "detalle-venta.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/detalle-ventas",
+      "handler": "detalle-venta.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/detalle-ventas/:id",
+      "handler": "detalle-venta.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/detalle-ventas/:id",
+      "handler": "detalle-venta.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

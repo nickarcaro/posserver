@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "detalle_ventas",
+  "info": {
+    "name": "Detalle Venta"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "venta": {
+      "model": "venta",
+      "via": "detalle_ventas"
+    },
+    "producto": {
+      "model": "productos"
+    },
+    "precio_producto_venta": {
+      "type": "integer"
+    },
+    "porcentaje_IVA": {
+      "type": "decimal"
+    },
+    "valor_IVA": {
+      "type": "integer"
+    }
+  }
+}
