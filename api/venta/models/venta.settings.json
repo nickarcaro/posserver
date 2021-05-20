@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ventas",
+  "info": {
+    "name": "Venta",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fecha": {
+      "type": "datetime",
+      "required": true
+    },
+    "total": {
+      "type": "biginteger",
+      "required": true,
+      "min": "1"
+    },
+    "porcentaje_descuento": {
+      "type": "decimal"
+    },
+    "medio_pago": {
+      "type": "enumeration",
+      "enum": [
+        "efectivo",
+        "debito",
+        "credito"
+      ]
+    },
+    "anulada": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
