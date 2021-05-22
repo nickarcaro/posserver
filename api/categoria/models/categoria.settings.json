@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "categorias",
   "info": {
-    "name": "Categoria"
+    "name": "Categoria",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,7 +13,22 @@
   "pluginOptions": {},
   "attributes": {
     "nombre": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "jerarquia": {
+      "model": "jerarquias"
+    },
+    "nodo_padre": {
+      "model": "categoria"
+    },
+    "hoja": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "productos": {
+      "collection": "productos"
     }
   }
 }

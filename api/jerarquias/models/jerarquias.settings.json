@@ -11,5 +11,12 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "categoria_raiz": {
+      "model": "categoria"
+    }
+  }
 }
