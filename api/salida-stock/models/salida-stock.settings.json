@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salida_stocks",
+  "info": {
+    "name": "Salida Stock",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cantidad": {
+      "type": "integer"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Venta",
+        "Manual"
+      ]
+    },
+    "fecha_salida": {
+      "type": "datetime"
+    },
+    "producto": {
+      "model": "productos",
+      "via": "salida_stocks"
+    },
+    "motivo": {
+      "type": "text"
+    },
+    "valor_unitario": {
+      "type": "integer"
+    },
+    "valor_total": {
+      "type": "integer"
+    },
+    "venta": {
+      "model": "venta",
+      "via": "salida_stocks"
+    }
+  }
+}
