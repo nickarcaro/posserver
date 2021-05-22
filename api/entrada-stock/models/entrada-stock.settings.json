@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "entrada_stocks",
   "info": {
-    "name": "Entrada Stock"
+    "name": "Entrada Stock",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -25,6 +26,10 @@
     },
     "producto": {
       "model": "productos",
+      "via": "entrada_stocks"
+    },
+    "proveedor": {
+      "model": "proveedor",
       "via": "entrada_stocks"
     }
   }

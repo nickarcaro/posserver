@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedors",
+  "info": {
+    "name": "Proveedor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rut": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "direccion": {
+      "type": "text"
+    },
+    "entrada_stocks": {
+      "via": "proveedor",
+      "collection": "entrada-stock"
+    }
+  }
+}
