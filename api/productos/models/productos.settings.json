@@ -48,6 +48,10 @@
     "alertas": {
       "via": "producto",
       "collection": "alerta"
+    },
+    "entrada_stocks": {
+      "via": "producto",
+      "collection": "entrada-stock"
     }
   }
 }

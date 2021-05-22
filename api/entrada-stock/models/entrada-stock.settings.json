@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entrada_stocks",
+  "info": {
+    "name": "Entrada Stock"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "costo_unitario": {
+      "type": "integer"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "fecha_ingreso": {
+      "type": "datetime"
+    },
+    "costo_total": {
+      "type": "integer"
+    },
+    "producto": {
+      "model": "productos",
+      "via": "entrada_stocks"
+    }
+  }
+}

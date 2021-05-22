@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/entrada-stocks",
+      "handler": "entrada-stock.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entrada-stocks/count",
+      "handler": "entrada-stock.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entrada-stocks/:id",
+      "handler": "entrada-stock.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/entrada-stocks",
+      "handler": "entrada-stock.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/entrada-stocks/:id",
+      "handler": "entrada-stock.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/entrada-stocks/:id",
+      "handler": "entrada-stock.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
