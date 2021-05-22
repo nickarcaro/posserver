@@ -40,6 +40,10 @@
     "detalle_ventas": {
       "via": "venta",
       "collection": "detalle-venta"
+    },
+    "salida_stocks": {
+      "via": "venta",
+      "collection": "salida-stock"
     }
   }
 }

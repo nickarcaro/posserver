@@ -52,6 +52,10 @@
     "entrada_stocks": {
       "via": "producto",
       "collection": "entrada-stock"
+    }, 
+    "salida_stocks": {
+      "via": "producto",
+      "collection": "salida-stock"
     }
   }
 }

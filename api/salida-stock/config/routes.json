@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/salida-stocks",
+      "handler": "salida-stock.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salida-stocks/count",
+      "handler": "salida-stock.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salida-stocks/:id",
+      "handler": "salida-stock.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/salida-stocks",
+      "handler": "salida-stock.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/salida-stocks/:id",
+      "handler": "salida-stock.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/salida-stocks/:id",
+      "handler": "salida-stock.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
