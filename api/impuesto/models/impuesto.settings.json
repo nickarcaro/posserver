@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "impuestos",
+  "info": {
+    "name": "Impuesto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "porcentaje": {
+      "type": "decimal"
+    }
+  }
+}
