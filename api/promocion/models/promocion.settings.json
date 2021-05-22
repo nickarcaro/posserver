@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Promociones",
+  "info": {
+    "name": "Promocion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "inicio_vigencia": {
+      "type": "datetime",
+      "required": true
+    },
+    "fin_vigencia": {
+      "type": "datetime"
+    },
+    "nombre": {
+      "type": "richtext",
+      "required": true
+    },
+    "productos": {
+      "collection": "productos",
+      "via": "promocions",
+      "dominant": true
+    },
+    "almacen": {
+      "model": "almacenes",
+      "via": "promocions"
+    },
+    "precio_promocion": {
+      "type": "integer",
+      "required": true
+    },
+    "vigente": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
