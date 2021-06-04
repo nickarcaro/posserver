@@ -1,9 +1,12 @@
 module.exports = {
-  //...
+  load: {
+    before: ["timer", "responseTime", "logger", "cors", "responses", "gzip"],
+    after: ["parser", "router"],
+  },
   settings: {
     cors: {
       enabled: true,
-      origin: ['http://localhost', 'https://posclient-2bjm7.ondigitalocean.app'],
+      origin: ["*"],
     },
   },
 };
