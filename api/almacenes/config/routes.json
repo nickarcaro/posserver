@@ -5,7 +5,7 @@
       "path": "/almacenes",
       "handler": "almacenes.find",
       "config": {
-        "policies": []
+        "policies": ["global::isTargetUserLoggedIn"]
       }
     },
     {
@@ -20,6 +20,14 @@
       "method": "GET",
       "path": "/almacenes/:id",
       "handler": "almacenes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/almacenes/slug/:slug",
+      "handler": "almacenes.findSlug",
       "config": {
         "policies": []
       }
