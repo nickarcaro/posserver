@@ -26,10 +26,6 @@
     },
     "iva": {
       "type": "decimal"
-    },
-    "producto": {
-      "via": "precio",
-      "model": "productos"
     }
   }
 }

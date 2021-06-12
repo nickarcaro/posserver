@@ -24,8 +24,8 @@
       "required": true
     },
     "productos": {
-      "collection": "productos",
       "via": "promocions",
+      "collection": "productos",
       "dominant": true
     },
     "almacen": {
