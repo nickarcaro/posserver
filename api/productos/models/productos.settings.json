@@ -54,7 +54,10 @@
       "via": "productos",
       "collection": "promocion"
     },
-    "precio": {
+    "precio_actual": {
+      "type": "integer"
+    },
+    "stock_actual": {
       "type": "integer"
     }
   }
