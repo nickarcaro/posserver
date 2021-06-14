@@ -40,6 +40,10 @@
     "promocions": {
       "via": "almacen",
       "collection": "promocion"
+    },
+    "ventas": {
+      "via": "almacen",
+      "collection": "venta"
     }
   }
 }

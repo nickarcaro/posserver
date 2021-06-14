@@ -12,8 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "venta": {
-      "model": "venta",
-      "via": "detalle_ventas"
+      "via": "detalle_ventas",
+      "model": "venta"
     },
     "producto": {
       "model": "productos"

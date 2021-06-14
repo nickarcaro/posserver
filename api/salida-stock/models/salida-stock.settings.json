@@ -39,8 +39,8 @@
       "type": "integer"
     },
     "venta": {
-      "model": "venta",
-      "via": "salida_stocks"
+      "via": "salida_stocks",
+      "model": "venta"
     }
   }
 }
