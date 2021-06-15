@@ -14,12 +14,11 @@
   "attributes": {
     "fecha": {
       "type": "datetime",
-      "required": true
+      "required": false
     },
     "total": {
       "type": "biginteger",
-      "required": true,
-      "min": "1"
+      "required": true
     },
     "porcentaje_descuento": {
       "type": "decimal"
@@ -35,7 +34,7 @@
     "anulada": {
       "type": "boolean",
       "default": false,
-      "required": true
+      "required": false
     },
     "detalle_ventas": {
       "via": "venta",
