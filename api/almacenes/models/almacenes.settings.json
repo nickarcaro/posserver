@@ -44,6 +44,10 @@
     "ventas": {
       "via": "almacen",
       "collection": "venta"
+    },
+    "vendedores": {
+      "via": "almacen",
+      "collection": "vendedores"
     }
   }
 }

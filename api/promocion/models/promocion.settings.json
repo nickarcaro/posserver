@@ -40,6 +40,14 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "activo",
+        "inactivo"
+      ],
+      "default": "activo"
     }
   }
 }

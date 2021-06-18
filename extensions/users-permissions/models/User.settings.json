@@ -70,6 +70,16 @@
     "lastname": {
       "type": "string",
       "required": true
+    },
+    "vendedores": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "user"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "vendedores"
     }
   }
 }
