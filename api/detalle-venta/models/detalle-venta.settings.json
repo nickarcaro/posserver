@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "detalle_ventas",
   "info": {
-    "name": "Detalle Venta"
+    "name": "Detalle Venta",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,19 +13,25 @@
   "pluginOptions": {},
   "attributes": {
     "venta": {
-      "model": "venta",
-      "via": "detalle_ventas"
+      "via": "detalle_ventas",
+      "model": "venta"
     },
     "producto": {
       "model": "productos"
     },
-    "precio_producto_venta": {
+    "precio_unitario": {
       "type": "integer"
     },
     "porcentaje_IVA": {
       "type": "decimal"
     },
     "valor_IVA": {
+      "type": "integer"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "precio_total": {
       "type": "integer"
     }
   }

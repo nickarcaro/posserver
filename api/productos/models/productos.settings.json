@@ -21,19 +21,12 @@
       "enum": [
         "activo",
         "inactivo"
-      ]
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "nombre"
+      ],
+      "default": "activo"
     },
     "almacen": {
       "via": "productos",
       "model": "almacenes"
-    },
-    "precio": {
-      "via": "producto",
-      "model": "precios"
     },
     "imagen": {
       "model": "file",
@@ -60,6 +53,12 @@
     "promocions": {
       "via": "productos",
       "collection": "promocion"
+    },
+    "precio_actual": {
+      "type": "integer"
+    },
+    "stock_actual": {
+      "type": "integer"
     }
   }
 }

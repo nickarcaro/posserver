@@ -24,8 +24,8 @@
       "required": true
     },
     "productos": {
-      "collection": "productos",
       "via": "promocions",
+      "collection": "productos",
       "dominant": true
     },
     "almacen": {
@@ -40,6 +40,14 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "activo",
+        "inactivo"
+      ],
+      "default": "activo"
     }
   }
 }
