@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendedores",
+  "info": {
+    "name": "vendedores",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "activo",
+        "inactivo"
+      ],
+      "default": "activo"
+    },
+    "almacen": {
+      "model": "almacenes",
+      "via": "vendedores"
+    }
+  }
+}
