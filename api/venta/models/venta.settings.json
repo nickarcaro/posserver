@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "fecha": {
-      "type": "datetime",
-      "required": false
-    },
     "total": {
       "type": "biginteger",
       "required": true
@@ -45,8 +41,11 @@
       "collection": "salida-stock"
     },
     "almacen": {
-      "via": "ventas",
-      "model": "almacenes"
+      "model": "almacenes",
+      "via": "ventas"
+    },
+    "fecha": {
+      "type": "string"
     }
   }
 }

@@ -20,10 +20,8 @@
       "enum": [
         "Venta",
         "Manual"
-      ]
-    },
-    "fecha_salida": {
-      "type": "datetime"
+      ],
+      "default": "Venta"
     },
     "producto": {
       "via": "salida_stocks",
@@ -41,6 +39,9 @@
     "venta": {
       "via": "salida_stocks",
       "model": "venta"
+    },
+    "fecha": {
+      "type": "string"
     }
   }
 }
