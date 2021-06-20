@@ -23,9 +23,6 @@
       ],
       "default": "Venta"
     },
-    "fecha_salida": {
-      "type": "datetime"
-    },
     "producto": {
       "via": "salida_stocks",
       "model": "productos"
@@ -42,6 +39,9 @@
     "venta": {
       "via": "salida_stocks",
       "model": "venta"
+    },
+    "fecha": {
+      "type": "string"
     }
   }
 }
