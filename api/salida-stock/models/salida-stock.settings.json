@@ -20,7 +20,8 @@
       "enum": [
         "Venta",
         "Manual"
-      ]
+      ],
+      "default": "Venta"
     },
     "fecha_salida": {
       "type": "datetime"
