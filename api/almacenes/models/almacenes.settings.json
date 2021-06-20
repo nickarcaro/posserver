@@ -48,6 +48,15 @@
     "vendedores": {
       "via": "almacen",
       "collection": "vendedores"
+    },
+    "proveedors": {
+      "via": "almacen",
+      "collection": "proveedor"
+    },
+    "vendors": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "almacen"
     }
   }
 }

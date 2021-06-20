@@ -29,8 +29,8 @@
       "model": "productos"
     },
     "proveedor": {
-      "model": "proveedor",
-      "via": "entrada_stocks"
+      "via": "entrada_stocks",
+      "model": "proveedor"
     }
   }
 }

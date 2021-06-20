@@ -29,8 +29,8 @@
       "dominant": true
     },
     "almacen": {
-      "model": "almacenes",
-      "via": "promocions"
+      "via": "promocions",
+      "model": "almacenes"
     },
     "precio_promocion": {
       "type": "integer",

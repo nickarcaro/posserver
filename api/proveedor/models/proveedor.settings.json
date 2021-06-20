@@ -30,6 +30,10 @@
     "entrada_stocks": {
       "via": "proveedor",
       "collection": "entrada-stock"
+    },
+    "almacen": {
+      "via": "proveedors",
+      "model": "almacenes"
     }
   }
 }

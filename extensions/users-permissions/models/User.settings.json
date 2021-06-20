@@ -80,6 +80,10 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "vendedores"
+    },
+    "almacen": {
+      "via": "vendors",
+      "model": "almacenes"
     }
   }
 }

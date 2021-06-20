@@ -45,8 +45,8 @@
       "collection": "salida-stock"
     },
     "almacen": {
-      "model": "almacenes",
-      "via": "ventas"
+      "via": "ventas",
+      "model": "almacenes"
     }
   }
 }
