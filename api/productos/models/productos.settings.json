@@ -59,6 +59,10 @@
     "categorias": {
       "via": "productos",
       "collection": "categoria"
+    },
+    "categoria_simples": {
+      "via": "productos",
+      "collection": "categoria-simple"
     }
   }
 }

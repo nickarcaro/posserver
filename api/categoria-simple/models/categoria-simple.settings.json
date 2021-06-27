@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoria_simples",
+  "info": {
+    "name": "Categoria Simple"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "almacen": {
+      "model": "almacenes",
+      "via": "categoria_simples"
+    },
+    "productos": {
+      "collection": "productos",
+      "via": "categoria_simples",
+      "dominant": true
+    }
+  }
+}

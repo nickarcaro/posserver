@@ -61,6 +61,10 @@
     "categorias": {
       "via": "almacen",
       "collection": "categoria"
+    },
+    "categoria_simples": {
+      "via": "almacen",
+      "collection": "categoria-simple"
     }
   }
 }

@@ -46,6 +46,9 @@
     },
     "fecha": {
       "type": "string"
+    },
+    "promocions": {
+      "collection": "promocion"
     }
   }
 }
