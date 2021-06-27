@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_componentes_producto_promocions",
+  "info": {
+    "name": "Producto Promocion",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "producto": {
+      "model": "productos"
+    },
+    "cantidad": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    }
+  }
+}

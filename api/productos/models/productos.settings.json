@@ -50,15 +50,15 @@
       "via": "producto",
       "collection": "salida-stock"
     },
-    "promocions": {
-      "via": "productos",
-      "collection": "promocion"
-    },
     "precio_actual": {
       "type": "integer"
     },
     "stock_actual": {
       "type": "integer"
+    },
+    "categorias": {
+      "via": "productos",
+      "collection": "categoria"
     }
   }
 }

@@ -19,15 +19,6 @@
     "fin_vigencia": {
       "type": "datetime"
     },
-    "nombre": {
-      "type": "richtext",
-      "required": true
-    },
-    "productos": {
-      "via": "promocions",
-      "collection": "productos",
-      "dominant": true
-    },
     "almacen": {
       "via": "promocions",
       "model": "almacenes"
@@ -48,6 +39,15 @@
         "inactivo"
       ],
       "default": "activo"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "productos_promocion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "componentes.producto-promocion",
+      "required": true
     }
   }
 }

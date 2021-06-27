@@ -28,7 +28,13 @@
       "required": true
     },
     "productos": {
-      "collection": "productos"
+      "collection": "productos",
+      "via": "categorias",
+      "dominant": true
+    },
+    "almacen": {
+      "model": "almacenes",
+      "via": "categorias"
     }
   }
 }

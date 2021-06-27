@@ -57,6 +57,10 @@
       "via": "almacen",
       "plugin": "users-permissions",
       "collection": "user"
+    },
+    "categorias": {
+      "via": "almacen",
+      "collection": "categoria"
     }
   }
 }
