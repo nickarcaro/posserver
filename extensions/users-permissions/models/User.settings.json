@@ -87,7 +87,8 @@
     },
     "is_admin": {
       "type": "boolean",
-      "default": false
+      "default": false,
+      "required": true
     }
   }
 }

@@ -30,7 +30,7 @@
     "vigente": {
       "type": "boolean",
       "default": true,
-      "required": true
+      "required": false
     },
     "estado": {
       "type": "enumeration",
