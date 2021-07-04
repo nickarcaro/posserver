@@ -7,18 +7,23 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "test": "jest --forceExit --detectOpenHandles"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.3"
+  },
   "dependencies": {
     "knex": "0.21.18",
     "slugify": "^1.5.3",
-    "sqlite3": "5.0.0",
+    "sqlite3": "^5.0.2",
     "strapi": "3.6.2",
     "strapi-admin": "3.6.2",
     "strapi-connector-bookshelf": "3.6.2",
     "strapi-plugin-content-manager": "3.6.2",
     "strapi-plugin-content-type-builder": "3.6.2",
+    "strapi-plugin-documentation": "3.6.2",
     "strapi-plugin-email": "3.6.2",
     "strapi-plugin-i18n": "3.6.2",
     "strapi-plugin-upload": "3.6.2",
@@ -31,6 +36,14 @@
   },
   "strapi": {
     "uuid": "69b62c8c-7bd7-411c-9029-cca16c014209"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      ".tmp",
+      ".cache"
+    ],
+    "testEnvironment": "node"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
